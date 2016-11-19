@@ -449,6 +449,7 @@ label[for="submenu__projects"] {
   transition: transform 0.15s linear, bottom 0.15s 0.15s ease-out;
   transition: transform 0.15s linear, bottom 0.15s 0.15s ease-out, -webkit-transform 0.15s linear;
   bottom: 0;
+  left: 0;
 }
 
 #h-to-x-menu:checked ~ nav > label[for="h-to-x-menu"] > .h-to-x:before {
