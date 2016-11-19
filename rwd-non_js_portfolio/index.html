@@ -9,15 +9,21 @@
   <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700" rel="stylesheet">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-  <!-- <link rel="stylesheet" href="css/portfolio.css"> -->
   <link rel="stylesheet" href="css/portfolio_dark.css">
-  <!-- <link rel="stylesheet" href="css/business_card.css"> -->
   <link rel="stylesheet" href="css/business_card_dark.css">
 </head>
 
 <body>
+<input type="checkbox" id="h-to-x-menu">
   <nav>
     <h1>s.b.chittenden</h1>
+<!-- hamburger menu for off canvas -->
+  <label for="h-to-x-menu">
+    <div class="h-to-x">
+    <span class="h-to-x-bar"></span>
+    </div>
+  </label>
+<!-- end hamburger menu -->
     <ul class="nav_list">
       <li><a href="#about">about</a></li>
       <li><a href="#projects">projects</a></li>
@@ -41,6 +47,36 @@
     </div>
   </div>
   <!-- end search modal -->
+
+  <!-- off canvas menu -->
+  <div class="nav-off-canvas__container">
+  <div class="nav-off-canvas__main-menu">
+    <input type="checkbox" id="submenu__projects">
+    <ul class="off-canvas__nav-list">
+      <li><a href="#about">about</a></li>
+      <li><label for="submenu__projects">projects</label></li>
+      <li><a href="#skills">skills</a></li>
+      <li><a href="#articles">articles</a></li>
+      <li><a href="#contact">contact</a></li>
+      <li><a href="#search">search</a></li>
+    </ul>
+    <div class="nav-off-canvas__sub-menu">
+      <ul class="off-canvas__nav-list">
+        <li><a href="#">calculator</a></li>
+        <li><a href="#">accordion</a></li>
+        <li><a href="#">tab component</a></li>
+        <li><a href="#">image gallery</a></li>
+        <li><a href="#">forms</a></li>
+        <li><a href="#">shopping cart</a></li>
+        <li><a href="#">business card</a></li>
+        <li><a href="#">profile sidebar</a></li>
+        <li><a href="#">buttons</a></li>
+      </ul>
+    </div>
+  </div>
+
+</div>
+  <!-- end off canvas menu -->
   <section class="section" id="landing">
     <h1 class="greeting">Hi.</h1>
   </section>
