@@ -694,19 +694,6 @@ label[for="submenu__projects"] {
   margin-bottom: 0em;
 }
 
-@media screen and (max-width: 400px) {
-  .section__content {
-    width: 100%;
-  }
-  .section__content h1 {
-    text-align: center;
-  }
-  .section__content p {
-    padding: 0 1.5em 0 1.5em;
-  }
-}
-
-
 .headshot {
   width: 12em;
   height: 12em;
@@ -774,6 +761,23 @@ label[for="submenu__projects"] {
   font-size: 1.25em;
 }
 
+/* ------------------------------------------
+        SECTION CONTENT MEDIA QUERIES
+--------------------------------------------- */
+
+
+@media screen and (max-width: 400px) {
+  .section__content {
+    width: 100%;
+  }
+  .section__content h1 {
+    text-align: center;
+  }
+  .section__content p, .article-list {
+    padding: 0 1.5em 0 1.5em;
+  }
+
+}
 
 /* ------------------------------------------
                 PROJECT TABS STYLES
@@ -1436,6 +1440,19 @@ label[for^="project-"]:hover {
   opacity: 1;
 }
 
+@media screen and (max-width: 500px) {
+  .skill-graphs__container {
+    padding: 1em 3em 0em 1em;
+  }
+  .title {
+    font-size: 0.85em;
+  }
+}
+@media screen and (max-width: 350px) {
+  .skills-graph__container {
+    font-size: 0.7em;
+  }
+}
 
 /* ------------------------------------------
                 FOOTER STYLES
