@@ -1357,7 +1357,7 @@ label[for^="project-"]:hover {
 }
 
 .bar-item {
-  width: 35px;
+  width: 2.188em;
 }
 
 .bar-item:hover {
@@ -1451,9 +1451,6 @@ label[for^="project-"]:hover {
 @media screen and (max-width: 350px) {
   .skill-graphs__container {
     font-size: 0.7em;
-  }
-  .y-axis {
-    display: none;
   }
 }
 
