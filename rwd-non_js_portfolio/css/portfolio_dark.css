@@ -761,10 +761,10 @@ label[for="submenu__projects"] {
   font-size: 1.25em;
 }
 
+
 /* ------------------------------------------
         SECTION CONTENT MEDIA QUERIES
 --------------------------------------------- */
-
 
 @media screen and (max-width: 400px) {
   .section__content {
@@ -773,11 +773,12 @@ label[for="submenu__projects"] {
   .section__content h1 {
     text-align: center;
   }
-  .section__content p, .article-list {
+  .section__content p,
+  .article-list {
     padding: 0 1.5em 0 1.5em;
   }
-
 }
+
 
 /* ------------------------------------------
                 PROJECT TABS STYLES
@@ -802,7 +803,7 @@ input[id^="project"] {
   flex-wrap: wrap;
 }
 
-label[for^="project-"] {
+.project-tabs__label {
   display: block;
   padding: 1em 0.5em 1em 1em;
   cursor: pointer;
@@ -904,6 +905,59 @@ label[for^="project-"]:hover {
 #project-9:checked ~ .project-tabs__display-area .project-tabs__content:nth-of-type(9) {
   z-index: 5;
   position: relative;
+}
+
+
+/* tabs to accordion styles */
+
+.project-accordion__wrapper {
+  height: 0;
+  overflow: hidden;
+  transition: all 0.3s;
+}
+
+.project-accordion__label {
+  display: none;
+}
+
+#project-1:checked ~ .project-tabs__display-area label[for="project-1"] + .project-accordion__wrapper,
+#project-2:checked ~ .project-tabs__display-area label[for="project-2"] + .project-accordion__wrapper,
+#project-3:checked ~ .project-tabs__display-area label[for="project-3"] + .project-accordion__wrapper,
+#project-4:checked ~ .project-tabs__display-area label[for="project-4"] + .project-accordion__wrapper,
+#project-5:checked ~ .project-tabs__display-area label[for="project-5"] + .project-accordion__wrapper,
+#project-6:checked ~ .project-tabs__display-area label[for="project-6"] + .project-accordion__wrapper,
+#project-7:checked ~ .project-tabs__display-area label[for="project-7"] + .project-accordion__wrapper,
+#project-8:checked ~ .project-tabs__display-area label[for="project-8"] + .project-accordion__wrapper,
+#project-9:checked ~ .project-tabs__display-area label[for="project-9"] + .project-accordion__wrapper {
+  height: 700px;
+}
+
+#project-1:checked ~ .project-tabs__display-area label[for="project-1"] + .project-accordion__wrapper .project-tabs__content,
+#project-2:checked ~ .project-tabs__display-area label[for="project-2"] + .project-accordion__wrapper .project-tabs__content,
+#project-3:checked ~ .project-tabs__display-area label[for="project-3"] + .project-accordion__wrapper .project-tabs__content,
+#project-4:checked ~ .project-tabs__display-area label[for="project-4"] + .project-accordion__wrapper .project-tabs__content,
+#project-5:checked ~ .project-tabs__display-area label[for="project-5"] + .project-accordion__wrapper .project-tabs__content,
+#project-6:checked ~ .project-tabs__display-area label[for="project-6"] + .project-accordion__wrapper .project-tabs__content,
+#project-7:checked ~ .project-tabs__display-area label[for="project-7"] + .project-accordion__wrapper .project-tabs__content,
+#project-8:checked ~ .project-tabs__display-area label[for="project-8"] + .project-accordion__wrapper .project-tabs__content,
+#project-9:checked ~ .project-tabs__display-area label[for="project-9"] + .project-accordion__wrapper .project-tabs__content {
+  z-index: 5;
+  position: relative;
+}
+
+@media screen and (max-width: 725px) {
+  .project-tabs__tabs {
+    display: none;
+  }
+  .project-accordion__label {
+    display: block;
+    padding: 1em 0.5em 1em 1em;
+    cursor: pointer;
+    margin-left: 0.7em;
+    background-color: #636B7B;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+  }
 }
 
 
@@ -1262,6 +1316,7 @@ label[for^="project-"]:hover {
   -webkit-flex-wrap: wrap;
   flex-wrap: wrap;
   margin-bottom: 10%;
+  padding: 0 1em;
 }
 
 .skills-graphs__graph-label {
@@ -1448,11 +1503,13 @@ label[for^="project-"]:hover {
     font-size: 0.85em;
   }
 }
+
 @media screen and (max-width: 350px) {
   .skill-graphs__container {
     font-size: 0.7em;
   }
 }
+
 
 /* ------------------------------------------
                 FOOTER STYLES
