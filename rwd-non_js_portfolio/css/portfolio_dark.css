@@ -1451,7 +1451,9 @@ label[for^="project-"]:hover {
 @media screen and (max-width: 350px) {
   .skills-graph__container {
     font-size: 0.7em;
-    border: solid 1px red;
+  }
+  .y-axis {
+    display: none;
   }
 }
 
