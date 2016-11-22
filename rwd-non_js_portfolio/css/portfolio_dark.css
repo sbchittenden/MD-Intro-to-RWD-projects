@@ -290,6 +290,72 @@ input[id^="nav__search-modal"] {
   border: solid 2px #EF4D75;
 }
 
+/* ----- DEVICE WIDTH MODAL SPANS ------------ */
+.screen-width {
+    color: #636B7B;
+    display: none;
+    font-size: 0.75em;
+}
+
+@media screen and (max-width: 360px) {
+    .range-1 {
+        display: block;
+    }
+    .range-2 {
+        display: none;
+    }
+    .range-3 {
+        display: none;
+    }
+    .range-4 {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 360px) and (max-width: 600px) {
+    .range-1 {
+        display: none;
+    }
+    .range-2 {
+        display: block;
+    }
+    .range-3 {
+        display: none;
+    }
+    .range-4 {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+    .range-1 {
+        display: none;
+    }
+    .range-2 {
+        display: none;
+    }
+    .range-3 {
+        display: block;
+    }
+    .range-4 {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1025px) {
+    .range-1 {
+        display: none;
+    }
+    .range-2 {
+        display: none;
+    }
+    .range-3 {
+        display: none;
+    }
+    .range-4 {
+        display: block;
+    }
+}
 
 /* ------------------------------------------
             OFF CANVAS NAV STYLES
