@@ -1077,11 +1077,16 @@ input[id^="project"] {
 }
 
 @media screen and (max-width: 525px) {
+  .project-carousel__slide {
+    overflow-y: hidden;
+  }
   .slide-nav__previous {
     width: 2em;
     height: 2em;
     position: absolute;
     left: 0.5em;
+    top: 50%;
+    transform: translateY(-50%);
     text-shadow: 2px 0px 0px rgb(20, 21, 25);
   }
   .slide-nav__next {
@@ -1089,10 +1094,20 @@ input[id^="project"] {
     height: 2em;
     position: absolute;
     right: 0.5em;
+    top: 50%;
+    transform: translateY(-50%);
     text-shadow: -2px 0px 0px rgb(20, 21, 25);
   }
   .project-carousel__slide img {
-    width: 100%;
+    width: auto;
+    height: 90%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .slide-nav__previous,
+  .slide-nav__next {
+    display: none;
   }
 }
 
@@ -1540,6 +1555,7 @@ input[id^="project"] {
   }
 }
 
+
 /* -------------------------------------------
     BUSINESS CARD STYLES (CONTACT VERSION)
 ---------------------------------------------- */
@@ -1658,11 +1674,11 @@ label[for="card-flip"]:hover + .card {
 }
 
 .encyclopedia-link {
-    width: 50%;
-    position: absolute;
-    bottom: 1.1em;
-    font-family: "Lato";
-    -webkit-backface-visibility: hidden;
+  width: 50%;
+  position: absolute;
+  bottom: 1.1em;
+  font-family: "Lato";
+  -webkit-backface-visibility: hidden;
 }
 
 .encyclopedia-link a {
@@ -1731,7 +1747,8 @@ label[for="card-flip"]:hover + .card {
   .card h1 {
     text-align: left;
   }
-  .card p, .subheader {
+  .card p,
+  .subheader {
     font-size: 1.3em;
   }
 }
