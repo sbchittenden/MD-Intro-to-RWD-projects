@@ -51,6 +51,7 @@
   <label for="h-to-x-menu" id="off-canvas-menu__background"></label>
   <div class="nav-off-canvas__container">
     <div class="nav-off-canvas__main-menu">
+      <input type="checkbox" id="off-canvas__search">
       <input type="checkbox" id="submenu__projects">
       <ul class="off-canvas__nav-list">
         <li><a href="#about">about</a></li>
@@ -60,7 +61,14 @@
         <li><a href="#skills">skills</a></li>
         <li><a href="#articles">articles</a></li>
         <li><a href="#contact">contact</a></li>
-        <li><a href="#search">search</a></li>
+        <li>
+          <label for="off-canvas__search">search</label>
+        </li>
+        <li class="off-canvas-search">
+          <input type="text" class="search" required>
+          <!--  <label for="nav__search-input">search</label> -->
+          <label for="nav__search-modal__toggle"><i class="fa fa-lg fa-search" aria-hidden="true"></i></label>
+        </li>
       </ul>
       <div class="nav-off-canvas__sub-menu">
         <ul class="off-canvas__nav-list">

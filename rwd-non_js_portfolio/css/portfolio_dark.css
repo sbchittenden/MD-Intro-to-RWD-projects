@@ -343,7 +343,49 @@ input[type="checkbox"] {
   background-color: #5B616F;
 }
 
-label[for="submenu__projects"] {
+.off-canvas-search {
+  position: relative;
+  margin-top: 0.5em;
+}
+
+li.off-canvas-search:hover {
+  background-color: #40444F;
+}
+
+.off-canvas-search .search {
+  margin: 0 0.5em 0 1em;
+  padding-left: 0.5em;
+  height: 0;
+  opacity: 0;
+  width: 75%;
+  transition: height 0.2s linear, opacity 0.1s linear;
+}
+
+.off-canvas-search > label[for="nav__search-modal__toggle"] {
+  height: 0;
+  opacity: 0;
+  transition: height 0.2s linear, opacity 0.1s linear;
+}
+
+.off-canvas-search .search:focus + label,
+.off-canvas-search .search:valid + label {
+  top: 0em;
+  font-size: 1em;
+  color: #EF4D75;
+}
+
+#off-canvas__search:checked ~ .off-canvas__nav-list .off-canvas-search .search {
+  height: 3em;
+  opacity: 1;
+}
+
+#off-canvas__search:checked ~ .off-canvas__nav-list .off-canvas-search > label[for="nav__search-modal__toggle"] {
+  height: 3em;
+  opacity: 1;
+}
+
+label[for="submenu__projects"],
+label[for="off-canvas__search"] {
   cursor: pointer;
   display: block;
   padding: 1em;
