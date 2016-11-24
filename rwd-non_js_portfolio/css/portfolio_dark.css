@@ -1132,6 +1132,7 @@ input[id^="project"] {
 .project-carousel__bullet-nav {
   text-align: center;
   width: 100%;
+  margin-top: 0.625em;
   -ms-flex-order: 2;
   -webkit-box-ordinal-group: 3;
   -webkit-order: 2;
