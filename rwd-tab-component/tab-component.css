@@ -14,12 +14,6 @@ input[type="radio"] {
   display: none;
 }
 
-.tab-component {
-  position: relative;
-  margin: 5% auto;
-  max-width: 50vw;
-}
-
 .tab-label {
   display: inline-block;
   padding: 0.9em;
