@@ -12,6 +12,7 @@
   <link rel="stylesheet" href="css/portfolio_dark.css">
   <link rel="stylesheet" href="css/calculator.css">
   <link rel="stylesheet" href="css/accordion.css">
+  <link rel="stylesheet" href="css/tab-component.css">
 </head>
 
 <body>
@@ -370,15 +371,21 @@
                 <input type="radio" name="tab-component" id="p3-s1" checked>
                 <input type="radio" name="tab-component" id="p3-s2">
                 <input type="radio" name="tab-component" id="p3-s3">
+                <input type="radio" name="tab-component" id="p3-s4">
                 <div class="project-carousel__bullet-nav">
                   <label for="p3-s1"></label>
                   <label for="p3-s2"></label>
                   <label for="p3-s3"></label>
+                  <label for="p3-s4"></label>
                 </div>
                 <div class="project-carousel__display-area">
                   <figure class="project-carousel__slide">
-                    <label class="slide-nav__previous" for="p3-s3"><i class="fa fa-chevron-left fa-lg" aria-hidden="true"></i></label>
+                    <label class="slide-nav__previous" for="p3-s4"><i class="fa fa-chevron-left fa-lg" aria-hidden="true"></i></label>
+                    <picture>
+                      <source media="(max-width: 500px)" srcset="img/project_images/tabs_static.gif">
+                      <source media="(min-width: 501px)" srcset="img/project_images/tabs_static.gif">
                     <img src="img/project_images/tabs_static.gif" alt="tab component">
+                    </picture>
                     <label class="slide-nav__next" for="p3-s2"><i class="fa fa-chevron-right fa-lg" aria-hidden="true"></i></label>
                   </figure>
                   <figure class="project-carousel__slide">
@@ -389,6 +396,44 @@
                   <figure class="project-carousel__slide">
                     <label class="slide-nav__previous" for="p3-s2"><i class="fa fa-chevron-left fa-lg" aria-hidden="true"></i></label>
                     <img src="img/project_images/tabs_static.gif" alt="tab component">
+                    <label class="slide-nav__next" for="p3-s4"><i class="fa fa-chevron-right fa-lg" aria-hidden="true"></i></label>
+                  </figure>
+                  <figure class="project-carousel__slide">
+                    <label class="slide-nav__previous" for="p3-s3"><i class="fa fa-chevron-left fa-lg" aria-hidden="true"></i></label>
+                    <div class="project-embed">
+                      <!-- begin tab component embed -->
+                      <div class="tab-component">
+                        <input type="radio" id="home-decor" name="tab-input" checked>
+                        <input type="radio" id="furniture" name="tab-input">
+                        <input type="radio" id="kitchen" name="tab-input">
+                        <input type="radio" id="clearance" name="tab-input">
+                        <div class="tab-component__tabs">
+                          <label for="home-decor" class="tab-label">Home Decor</label>
+                          <label for="furniture" class="tab-label">Furniture</label>
+                          <label for="kitchen" class="tab-label">Kitchen</label>
+                          <label for="clearance" class="tab-label">Clearance</label>
+                        </div>
+                        <div class="tab-component__content">
+                          <div class="tab-content">
+                            <h1>Home Decor</h1>
+                            <p>Browse through our list of Home Decor items.</p>
+                          </div>
+                          <div class="tab-content">
+                            <h1>Furniture</h1>
+                            <p>Flash Sale on Living Room and Bedroom Furniture</p>
+                          </div>
+                          <div class="tab-content">
+                            <h1>Kitchen</h1>
+                            <p>Bring the best out of the master chef in you!</p>
+                          </div>
+                          <div class="tab-content">
+                            <h1>Clearance</h1>
+                            <p>Red hot deals at affordable prices. Check out our clearance section for more details.</p>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- end tab component embed -->
+                    </div>
                     <label class="slide-nav__next" for="p3-s1"><i class="fa fa-chevron-right fa-lg" aria-hidden="true"></i></label>
                   </figure>
                 </div>
