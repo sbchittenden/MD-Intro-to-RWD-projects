@@ -1023,26 +1023,28 @@ input[id^="project"] {
   margin-left: 0em;
 }
 
-#project-1:checked ~ .project-tabs__display-area .project-tabs__content:nth-of-type(1),
-#project-2:checked ~ .project-tabs__display-area .project-tabs__content:nth-of-type(2),
-#project-3:checked ~ .project-tabs__display-area .project-tabs__content:nth-of-type(3),
-#project-4:checked ~ .project-tabs__display-area .project-tabs__content:nth-of-type(4),
-#project-5:checked ~ .project-tabs__display-area .project-tabs__content:nth-of-type(5),
-#project-6:checked ~ .project-tabs__display-area .project-tabs__content:nth-of-type(6),
-#project-7:checked ~ .project-tabs__display-area .project-tabs__content:nth-of-type(7),
-#project-8:checked ~ .project-tabs__display-area .project-tabs__content:nth-of-type(8),
-#project-9:checked ~ .project-tabs__display-area .project-tabs__content:nth-of-type(9) {
+/*#project-1:checked ~ .project-tabs__display-area .project-accordion__wrapper:nth-of-type(1) + .project-tabs__content,
+#project-2:checked ~ .project-tabs__display-area .project-accordion__wrapper:nth-of-type(2) + .project-tabs__content,
+#project-3:checked ~ .project-tabs__display-area .project-accordion__wrapper:nth-of-type(3) + .project-tabs__content,
+#project-4:checked ~ .project-tabs__display-area .project-accordion__wrapper:nth-of-type(4) + .project-tabs__content,
+#project-5:checked ~ .project-tabs__display-area .project-accordion__wrapper:nth-of-type(5) + .project-tabs__content,
+#project-6:checked ~ .project-tabs__display-area .project-accordion__wrapper:nth-of-type(6) + .project-tabs__content,
+#project-7:checked ~ .project-tabs__display-area .project-accordion__wrapper:nth-of-type(7) + .project-tabs__content,
+#project-8:checked ~ .project-tabs__display-area .project-accordion__wrapper:nth-of-type(8) + .project-tabs__content,
+#project-9:checked ~ .project-tabs__display-area .project-accordion__wrapper:nth-of-type(9) + .project-tabs__content {
   z-index: 5;
   position: relative;
-}
+}*/
 
 
 /* tabs to accordion styles */
 
-.project-accordion__wrapper {
-  height: 0;
-  overflow: hidden;
-  transition: all 0.3s;
+@media screen and (max-width: 725px) {
+  .project-accordion__wrapper {
+    height: 0;
+    overflow: hidden;
+    transition: all 0.3s;
+  }
 }
 
 .project-accordion__label {
