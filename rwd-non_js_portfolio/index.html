@@ -11,6 +11,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
   <link rel="stylesheet" href="css/portfolio_dark.css">
   <link rel="stylesheet" href="css/calculator.css">
+  <link rel="stylesheet" href="css/accordion.css">
 </head>
 
 <body>
@@ -182,9 +183,7 @@
                       <!-- begin calculator embed code -->
                       <div id="calc-wrap">
                         <div id="display-bg">
-
                           <div id="display"><span id="cursor">_</span></div>
-
                         </div>
                         <div id="calc-logo">
                           Skeuomorph 5000
@@ -272,14 +271,16 @@
                 <input type="radio" name="accordion" id="p2-s1" checked>
                 <input type="radio" name="accordion" id="p2-s2">
                 <input type="radio" name="accordion" id="p2-s3">
+                <input type="radio" name="accordion" id="p2-s4">
                 <div class="project-carousel__bullet-nav">
                   <label for="p2-s1"></label>
                   <label for="p2-s2"></label>
                   <label for="p2-s3"></label>
+                  <label for="p2-s4"></label>
                 </div>
                 <div class="project-carousel__display-area">
                   <figure class="project-carousel__slide">
-                    <label class="slide-nav__previous" for="p2-s3"><i class="fa fa-chevron-left fa-lg" aria-hidden="true"></i></label>
+                    <label class="slide-nav__previous" for="p2-s4"><i class="fa fa-chevron-left fa-lg" aria-hidden="true"></i></label>
                     <picture>
                       <source media="(max-width: 500px)" srcset="img/project_images/accordion_static_sml_vert.gif">
                       <source media="(min-width: 501px) and (max-width: 812px)" srcset="img/project_images/accordion_static_medium.gif">
@@ -303,6 +304,50 @@
                       <source media="(min-width: 501px)" srcset="img/project_images/accordion_resize.gif">
                       <img src="img/project_images/accordion_resize.gif" alt="accordion resizing">
                     </picture>
+                    <label class="slide-nav__next" for="p2-s4"><i class="fa fa-chevron-right fa-lg" aria-hidden="true"></i></label>
+                  </figure>
+                  <figure class="project-carousel__slide">
+                    <label class="slide-nav__previous" for="p2-s3"><i class="fa fa-chevron-left fa-lg" aria-hidden="true"></i></label>
+                    <div class="project-embed">
+                      <!-- begin accordion embed code -->
+                      <div class="accordion">
+                        <ul>
+                          <li>
+                            <input type="radio" name="accordion-embed" id="accordion-section-1">
+                            <label for="accordion-section-1">Hamlet <i class="fa fa-chevron-down direction-chev" aria-hidden="true"></i></label>
+                            <div class="accordion-section-content">
+                              <p>"This above all: to thine own self be true". - (Act I, Scene III).</p>
+                              <p>"Though this be madness, yet there is method in 't.". - (Act II, Scene II).</p>
+                              <p>"Doubt that the sun doth move, doubt truth to be a liar, but never doubt I love". - (Act II, Scene II).</p>
+                            </div>
+                          </li>
+                          <li>
+                            <input type="radio" name="accordion-embed" id="accordion-section-2">
+                            <label for="accordion-section-2">Julius Caesar <i class="fa fa-chevron-down direction-chev" aria-hidden="true"></i></label>
+                            <div class="accordion-section-content">
+                              <p>"Cowards die many times before their deaths; The valiant never taste of death but once. Of all the wonders that I yet have heard, it seems to me most strange that men should fear; Seeing that death, a necessary end, will come when it will come". - (Act II, Scene II).</p>
+                            </div>
+                          </li>
+                          <li>
+                            <input type="radio" name="accordion-embed" id="accordion-section-3">
+                            <label for="accordion-section-3">A Midsummer Night's Dream <i class="fa fa-chevron-down direction-chev" aria-hidden="true"></i></label>
+                            <div class="accordion-section-content">
+                              <p>"The course of true love never did run smooth". - (Act I, Scene I).</p>
+                              <p>"Love looks not with the eyes, but with the mind, and therefore is winged Cupid painted blind". - (Act I, Scene I).</p>
+                            </div>
+                          </li>
+                          <li>
+                            <input type="radio" name="accordion-embed" id="accordion-section-4">
+                            <label for="accordion-section-4">As You Like It <i class="fa fa-chevron-down direction-chev" aria-hidden="true"></i></label>
+                            <div class="accordion-section-content">
+                              <p>"All the world 's a stage, and all the men and women merely players. They have their exits and their entrances; And one man in his time plays many parts" - (Act II, Scene VII).</p>
+                              <p>"The fool doth think he is wise, but the wise man knows himself to be a fool". - (Act V, Scene I).</p>
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+                      <!-- end accordion embed code -->
+                    </div>
                     <label class="slide-nav__next" for="p2-s1"><i class="fa fa-chevron-right fa-lg" aria-hidden="true"></i></label>
                   </figure>
                 </div>
@@ -322,7 +367,7 @@
               <h1>Tab Component</h1>
               <!-- project carousel -->
               <div class="project-carousel__container">
-                <input type="radio" name="tab-component" id="p3-s1" checked>
+                <input type="radio" name="tab-component" id="p3-s1">
                 <input type="radio" name="tab-component" id="p3-s2">
                 <input type="radio" name="tab-component" id="p3-s3">
                 <div class="project-carousel__bullet-nav">
@@ -363,7 +408,7 @@
               <h1>Image Gallery</h1>
               <!-- project carousel -->
               <div class="project-carousel__container">
-                <input type="radio" name="image-gallery" id="p4-s1" checked>
+                <input type="radio" name="image-gallery" id="p4-s1">
                 <input type="radio" name="image-gallery" id="p4-s2">
                 <input type="radio" name="image-gallery" id="p4-s3">
                 <div class="project-carousel__bullet-nav">
@@ -416,7 +461,7 @@
               <h1>Forms</h1>
               <!-- project carousel -->
               <div class="project-carousel__container">
-                <input type="radio" name="forms" id="p5-s1" checked>
+                <input type="radio" name="forms" id="p5-s1">
                 <input type="radio" name="forms" id="p5-s2">
                 <input type="radio" name="forms" id="p5-s3">
                 <div class="project-carousel__bullet-nav">
@@ -457,7 +502,7 @@
               <h1>Shopping Cart</h1>
               <!-- project carousel -->
               <div class="project-carousel__container">
-                <input type="radio" name="shopping-cart" id="p6-s1" checked>
+                <input type="radio" name="shopping-cart" id="p6-s1">
                 <input type="radio" name="shopping-cart" id="p6-s2">
                 <input type="radio" name="shopping-cart" id="p6-s3">
                 <div class="project-carousel__bullet-nav">
@@ -498,7 +543,7 @@
               <h1>Business Card</h1>
               <!-- project carousel -->
               <div class="project-carousel__container">
-                <input type="radio" name="business-card" id="p7-s1" checked>
+                <input type="radio" name="business-card" id="p7-s1">
                 <input type="radio" name="business-card" id="p7-s2">
                 <input type="radio" name="business-card" id="p7-s3">
                 <div class="project-carousel__bullet-nav">
@@ -539,7 +584,7 @@
               <h1>Profile Sidebar</h1>
               <!-- project carousel -->
               <div class="project-carousel__container">
-                <input type="radio" name="profile" id="p8-s1" checked>
+                <input type="radio" name="profile" id="p8-s1">
                 <input type="radio" name="profile" id="p8-s2">
                 <input type="radio" name="profile" id="p8-s3">
                 <div class="project-carousel__bullet-nav">
@@ -580,7 +625,7 @@
               <h1>Buttons</h1>
               <!-- project carousel -->
               <div class="project-carousel__container">
-                <input type="radio" name="buttons" id="p9-s1" checked>
+                <input type="radio" name="buttons" id="p9-s1">
                 <input type="radio" name="buttons" id="p9-s2">
                 <input type="radio" name="buttons" id="p9-s3">
                 <div class="project-carousel__bullet-nav">
