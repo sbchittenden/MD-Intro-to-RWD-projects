@@ -85,51 +85,28 @@ and for viewports higher than 1024px, use the color scheme as shown in the illus
  */
 
 @media screen and (max-width: 1024px) {
-
-  body {
-    background-color: #1f1f1f;
-  }
-
   label[for^="accordion-section"] {
     background-color: #707070;
   }
-
   label[for^="accordion-section"]:hover {
     background-color: #8f8f8f;
   }
-
 }
 
 @media screen and (max-width: 600px) {
-
-  body {
-    background-color: #0f6c5a;
-  }
-
   label[for^="accordion-section"] {
     background-color: #16a085;
   }
-
   label[for^="accordion-section"]:hover {
     background-color: #1abc9c;
   }
-
 }
 
 @media screen and (max-width: 360px) {
-
-  body {
-    background-color: #121738;
-  }
-
   label[for^="accordion-section"] {
     background-color: #19AAD1;
   }
-
   label[for^="accordion-section"]:hover {
     background-color: #4dc8ea;
   }
 }
-
-
-
