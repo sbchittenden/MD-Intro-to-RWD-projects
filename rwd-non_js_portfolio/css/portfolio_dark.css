@@ -1250,6 +1250,12 @@ input[id^="project"] {
   .slide-nav__next {
     display: none;
   }
+
+  .project-embed {
+    position: absolute;
+    margin-left: 50%;
+    transform: translateX(-50%);
+  }
 }
 
 #p1-s1:checked ~ .project-carousel__display-area .project-carousel__slide:nth-of-type(1),
