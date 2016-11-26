@@ -1,9 +1,9 @@
-#profile-card a {
+#md-profile-card a {
   text-decoration: none;
   color: black;
 }
 
-#profile-card {
+#md-profile-card {
   width: 50%;
   height: 24em;
   background-color: white;
