@@ -1251,7 +1251,7 @@ input[id^="project"] {
     display: none;
   }
 
-  .project-embed {
+  .tab-component-embed {
     position: absolute;
     margin-left: 50%;
     transform: translateX(-50%);
