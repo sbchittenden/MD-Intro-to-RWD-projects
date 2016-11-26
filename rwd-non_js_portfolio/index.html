@@ -14,6 +14,8 @@
   <link rel="stylesheet" href="css/accordion.css">
   <link rel="stylesheet" href="css/tab-component.css">
   <link rel="stylesheet" href="css/image_gallery.css">
+  <link rel="stylesheet" href="css/credit.css">
+  <script type="text/javascript" src="js/validator.js" ></script>
 </head>
 
 <body>
@@ -557,17 +559,94 @@
                 <div class="project-carousel__display-area">
                   <figure class="project-carousel__slide">
                     <label class="slide-nav__previous" for="p5-s3"><i class="fa fa-chevron-left fa-lg" aria-hidden="true"></i></label>
-                    <img src="img/project_images/credit_card_form.png" alt="credit card form image">
+                    <picture>
+                      <source media="(max-width: 500px)" srcset="img/project_images/credit_card_form_sml_vert.png">
+                      <source media="(min-width: 501px)" srcset="img/project_images/credit_card_form.png">
+                      <img src="img/project_images/credit_card_form.png" alt="credit card form image">
+                    </picture>
                     <label class="slide-nav__next" for="p5-s2"><i class="fa fa-chevron-right fa-lg" aria-hidden="true"></i></label>
                   </figure>
                   <figure class="project-carousel__slide">
                     <label class="slide-nav__previous" for="p5-s1"><i class="fa fa-chevron-left fa-lg" aria-hidden="true"></i></label>
-                    <img src="img/project_images/login_form.gif" alt="">
+                    <picture>
+                      <source media="(max-width: 500px)" srcset="img/project_images/login_form_sml_vert.png">
+                      <source media="(min-width: 501px)" srcset="img/project_images/login_form.png">
+                      <img src="img/project_images/login_form.png" alt="">
+                    </picture>
                     <label class="slide-nav__next" for="p5-s3"><i class="fa fa-chevron-right fa-lg" aria-hidden="true"></i></label>
                   </figure>
                   <figure class="project-carousel__slide">
                     <label class="slide-nav__previous" for="p5-s2"><i class="fa fa-chevron-left fa-lg" aria-hidden="true"></i></label>
-                    <img src="img/project_images/questionnaire_form.jpg" alt="">
+                    <div class="project-embed" id="cc-form">
+                      <!-- credit card form embed -->
+                      <div id="cc-form-wrap">
+                        <form action="" method="post" novalidate id="cc_form">
+                          <div id="input-wrap">
+                            <div id="logo"></div>
+                            <div class="txt-right">
+                              <p>Please enter your payment information below. <span class="icons"><i class="fa fa-cc-visa fa-lg" aria-hidden="true"></i> <i class="fa fa-cc-mastercard fa-lg" aria-hidden="true"></i> <i class="fa fa-cc-amex fa-lg" aria-hidden="true"></i></span></p>
+                            </div>
+                            <div class="input-group">
+                              <label for="full_name">Name on card:</label>
+                              <input type="text" name="full_name" id="full_name">
+                              <span class="error"></span>
+                            </div>
+                            <div class="input-group">
+                              <label for="cc_number">Card Number:</label>
+                              <input type="text" name="cc_number" id="cc_number" inputmode="numeric" maxlength="19">
+                              <span class="error"></span>
+                            </div>
+                            <div class="input-group">
+                              <label for="cvc" id="cvc-label"><i class="fa fa-question-circle-o" aria-hidden="true"></i> <span id="cvc-q">A CVC code is the 3 or 4-digit number on the back of the card. The CVC is typically the last three or four digits printed, not embossed like the card number, on the signature strip on the back of the card.</span> CVC Number: </label>
+                              <input type="text" name="cvc" id="cvc" inputmode="numeric">
+                              <span class="error"></span>
+                            </div>
+                            <div class="input-group">
+                              <label for="expiry">Expiration Date:</label>
+                              <select name="expiry_month" id="expiration_month">
+                                <option value="month" selected>Month</option>
+                                <option value="0">January</option>
+                                <option value="1">February</option>
+                                <option value="2">March</option>
+                                <option value="3">April</option>
+                                <option value="4">May</option>
+                                <option value="5">June</option>
+                                <option value="6">July</option>
+                                <option value="7">August</option>
+                                <option value="8">September</option>
+                                <option value="9">October</option>
+                                <option value="10">November</option>
+                                <option value="11">December</option>
+                              </select>
+                              <select name="expiry_year" id="expiry_year">
+                                <option value="year" selected>Year</option>
+                                <option value="2016">2016</option>
+                                <option value="2017">2017</option>
+                                <option value="2018">2018</option>
+                                <option value="2019">2019</option>
+                                <option value="2020">2020</option>
+                                <option value="2021">2021</option>
+                                <option value="2022">2022</option>
+                                <option value="2023">2023</option>
+                                <option value="2024">2024</option>
+                                <option value="2025">2025</option>
+                                <option value="2026">2026</option>
+                                <option value="2027">2027</option>
+                                <option value="2028">2028</option>
+                                <option value="2029">2029</option>
+                                <option value="2030">2030</option>
+                                <option value="2031">2031</option>
+                              </select>
+                              <span class="error"></span>
+                            </div>
+                            <div id="submit-button">
+                              <button class="button" type="submit">Submit</button>
+                            </div>
+                          </div>
+                        </form>
+                      </div>
+                      <!-- end credit card form embed -->
+                    </div>
                     <label class="slide-nav__next" for="p5-s1"><i class="fa fa-chevron-right fa-lg" aria-hidden="true"></i></label>
                   </figure>
                 </div>
@@ -959,6 +1038,7 @@
     <span>&copy; 2016 - Sam Chittenden</span>
   </footer>
   <script src="js/calculator.js" type="text/javascript"></script>
+  <script src="js/credit.js" type="text/javascript" ></script>
 </body>
 
 </html>
