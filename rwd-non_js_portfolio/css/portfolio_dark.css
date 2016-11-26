@@ -1250,7 +1250,12 @@ input[id^="project"] {
   .slide-nav__next {
     display: none;
   }
-
+  .project-embed {
+    position: absolute;
+    margin-left: 50%;
+    transform: translateX(-50%);
+  }
+  
   .tab-component-embed {
     position: absolute;
     margin-left: 50%;
