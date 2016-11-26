@@ -8,6 +8,7 @@
   <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Open+Sans:400,400i" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Bangers" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,700" rel="stylesheet">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
   <link rel="stylesheet" href="css/portfolio_dark.css">
@@ -17,6 +18,7 @@
   <link rel="stylesheet" href="css/image_gallery.css">
   <link rel="stylesheet" href="css/credit.css">
   <link rel="stylesheet" href="css/color.css">
+  <link rel="stylesheet" href="css/profile_card.css">
   <script type="text/javascript" src="js/validator.js"></script>
 </head>
 
@@ -573,9 +575,9 @@
                   <figure class="project-carousel__slide">
                     <label class="slide-nav__previous" for="p5-s1"><i class="fa fa-chevron-left fa-lg" aria-hidden="true"></i></label>
                     <picture>
-                      <source media="(max-width: 500px)" srcset="img/project_images/login_form_sml_vert.png">
-                      <source media="(min-width: 501px)" srcset="img/project_images/login_form.png">
-                      <img src="img/project_images/login_form.png" alt="">
+                      <source media="(max-width: 500px)" srcset="img/project_images/color-builder_sml_vert.png">
+                      <source media="(min-width: 501px)" srcset="img/project_images/color-builder.png">
+                      <img src="img/project_images/color-builder.png" alt="">
                     </picture>
                     <label class="slide-nav__next" for="p5-s3"><i class="fa fa-chevron-right fa-lg" aria-hidden="true"></i></label>
                   </figure>
@@ -825,17 +827,45 @@
                 <div class="project-carousel__display-area">
                   <figure class="project-carousel__slide">
                     <label class="slide-nav__previous" for="p8-s3"><i class="fa fa-chevron-left fa-lg" aria-hidden="true"></i></label>
-                    <img src="img/project_images/profile_card.jpg" alt="">
+                    <picture>
+                      <source media="(max-width: 500px)" srcset="img/project_images/profile_card_sml_vert.png">
+                      <source media="(min-width: 501px)" srcset="img/project_images/profile_card.jpg">
+                      <img src="img/project_images/profile_card.jpg" alt="profile card">
+                    </picture>
                     <label class="slide-nav__next" for="p8-s2"><i class="fa fa-chevron-right fa-lg" aria-hidden="true"></i></label>
                   </figure>
                   <figure class="project-carousel__slide">
                     <label class="slide-nav__previous" for="p8-s1"><i class="fa fa-chevron-left fa-lg" aria-hidden="true"></i></label>
-                    <img src="img/project_images/profile_card_closer.jpg" alt="">
+                    <picture>
+                      <source media="(max-width: 500px)" srcset="img/project_images/profile_card_sml_vert.png">
+                      <source media="(min-width: 501px)" srcset="img/project_images/profile_card.jpg">
+                      <img src="img/project_images/profile_card.jpg" alt="profile card">
+                    </picture>
                     <label class="slide-nav__next" for="p8-s3"><i class="fa fa-chevron-right fa-lg" aria-hidden="true"></i></label>
                   </figure>
                   <figure class="project-carousel__slide">
                     <label class="slide-nav__previous" for="p8-s2"><i class="fa fa-chevron-left fa-lg" aria-hidden="true"></i></label>
-                    <img src="img/project_images/profile_card_too_close.jpg" alt="">
+                    <div class="project-embed">
+                      <!-- begin profile card embed -->
+                      <div id="profile-card">
+                        <div class="card-header-img"></div>
+                        <div class="info-bckgrnd"></div>
+                        <div class="wedge"></div>
+                        <div class="pic">
+                          <img src="img/profile_card/headshot.jpg" alt="" class="profile-pic" />
+                        </div>
+                        <div class="name">
+                          <h1><span class="light">Sam</span><br> Chittenden</h1>
+                        </div>
+                        <div class="bio">
+                          <p>I am a designer and developer living in Colorado, USA. I play the drums, rock climb, and was a professional ballet dancer for 15 years.</p>
+                        </div>
+                        <div class="return">
+                          <h5 class="bio-link"><a href="#full_profile">Back to full profile -></a></h5>
+                        </div>
+                      </div>
+                      <!-- end profile card embed -->
+                    </div>
                     <label class="slide-nav__next" for="p8-s1"><i class="fa fa-chevron-right fa-lg" aria-hidden="true"></i></label>
                   </figure>
                 </div>

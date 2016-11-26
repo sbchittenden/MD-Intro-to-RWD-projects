@@ -1,6 +1,7 @@
 #color-build-form-wrap h1 {
   font-family: 'Bangers', 'Helvetica', 'Arial', sans-serif;
   font-size: 4em;
+  margin-bottom: 0;
   color: #ffe100;
   text-shadow: -3px -2px black, -2px -2px black, 5px 6px black, 4px 6px black, 4px -3px black, 7px 5px black, -3px 2px black;
 }
@@ -76,6 +77,10 @@
 #color-build-form-wrap .slider-wrap {
   width: 45%;
   float: left;
+}
+
+#color-build-form-wrap .slider-wrap div label {
+	font-family: 'Bangers';
 }
 
 #color-build-form-wrap .slider-wrap > div {
