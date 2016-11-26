@@ -1041,9 +1041,9 @@ input[id^="project"] {
 
 @media screen and (max-width: 725px) {
   .project-accordion__wrapper {
-    height: 0;
+    max-height: 0;
     overflow: hidden;
-    transition: all 0.3s;
+    transition: all 0.75s;
   }
 }
 
@@ -1064,7 +1064,7 @@ input[id^="project"] {
 #project-7:checked ~ .project-tabs__display-area label[for="project-7"] + .project-accordion__wrapper,
 #project-8:checked ~ .project-tabs__display-area label[for="project-8"] + .project-accordion__wrapper,
 #project-9:checked ~ .project-tabs__display-area label[for="project-9"] + .project-accordion__wrapper {
-  height: 700px;
+  max-height: 725px;
 }
 
 #project-1:checked ~ .project-tabs__display-area label[for="project-1"] + .project-accordion__wrapper .project-tabs__content,
@@ -1270,6 +1270,7 @@ input[id^="project"] {
 #p4-s1:checked ~ .project-carousel__display-area .project-carousel__slide:nth-of-type(1),
 #p4-s2:checked ~ .project-carousel__display-area .project-carousel__slide:nth-of-type(2),
 #p4-s3:checked ~ .project-carousel__display-area .project-carousel__slide:nth-of-type(3),
+#p4-s4:checked ~ .project-carousel__display-area .project-carousel__slide:nth-of-type(4),
 #p5-s1:checked ~ .project-carousel__display-area .project-carousel__slide:nth-of-type(1),
 #p5-s2:checked ~ .project-carousel__display-area .project-carousel__slide:nth-of-type(2),
 #p5-s3:checked ~ .project-carousel__display-area .project-carousel__slide:nth-of-type(3),
@@ -1303,6 +1304,7 @@ input[id^="project"] {
 #p4-s1:checked ~ .project-carousel__display-area .project-carousel__slide:nth-of-type(1) img,
 #p4-s2:checked ~ .project-carousel__display-area .project-carousel__slide:nth-of-type(2) img,
 #p4-s3:checked ~ .project-carousel__display-area .project-carousel__slide:nth-of-type(3) img,
+#p4-s4:checked ~ .project-carousel__display-area .project-carousel__slide:nth-of-type(4) .project-embed,
 #p5-s1:checked ~ .project-carousel__display-area .project-carousel__slide:nth-of-type(1) img,
 #p5-s2:checked ~ .project-carousel__display-area .project-carousel__slide:nth-of-type(2) img,
 #p5-s3:checked ~ .project-carousel__display-area .project-carousel__slide:nth-of-type(3) img,
@@ -1332,9 +1334,11 @@ input[id^="project"] {
 #p3-s1:checked ~ .project-carousel__bullet-nav > label[for="p3-s1"],
 #p3-s2:checked ~ .project-carousel__bullet-nav > label[for="p3-s2"],
 #p3-s3:checked ~ .project-carousel__bullet-nav > label[for="p3-s3"],
+#p3-s4:checked ~ .project-carousel__bullet-nav > label[for="p3-s4"],
 #p4-s1:checked ~ .project-carousel__bullet-nav > label[for="p4-s1"],
 #p4-s2:checked ~ .project-carousel__bullet-nav > label[for="p4-s2"],
 #p4-s3:checked ~ .project-carousel__bullet-nav > label[for="p4-s3"],
+#p4-s4:checked ~ .project-carousel__bullet-nav > label[for="p4-s4"],
 #p5-s1:checked ~ .project-carousel__bullet-nav > label[for="p5-s1"],
 #p5-s2:checked ~ .project-carousel__bullet-nav > label[for="p5-s2"],
 #p5-s3:checked ~ .project-carousel__bullet-nav > label[for="p5-s3"],

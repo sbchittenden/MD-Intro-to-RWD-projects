@@ -13,6 +13,7 @@
   <link rel="stylesheet" href="css/calculator.css">
   <link rel="stylesheet" href="css/accordion.css">
   <link rel="stylesheet" href="css/tab-component.css">
+  <link rel="stylesheet" href="css/image_gallery.css">
 </head>
 
 <body>
@@ -384,7 +385,7 @@
                     <picture>
                       <source media="(max-width: 500px)" srcset="img/project_images/tabs_static_sml_vert.gif">
                       <source media="(min-width: 501px)" srcset="img/project_images/tabs_static.gif">
-                    <img src="img/project_images/tabs_static.gif" alt="tab component">
+                      <img src="img/project_images/tabs_static.gif" alt="tab component">
                     </picture>
                     <label class="slide-nav__next" for="p3-s2"><i class="fa fa-chevron-right fa-lg" aria-hidden="true"></i></label>
                   </figure>
@@ -393,7 +394,7 @@
                     <picture>
                       <source media="(max-width: 500px)" srcset="img/project_images/tab_component_sml_vert.gif">
                       <source media="(min-width: 501px)" srcset="img/project_images/tab_component.gif">
-                    <img src="img/project_images/tab_component.gif" alt="tab component">
+                      <img src="img/project_images/tab_component.gif" alt="tab component">
                     </picture>
                     <label class="slide-nav__next" for="p3-s3"><i class="fa fa-chevron-right fa-lg" aria-hidden="true"></i></label>
                   </figure>
@@ -402,13 +403,13 @@
                     <picture>
                       <source media="(max-width: 500px)" srcset="img/project_images/tabs_static_sml_vert.gif">
                       <source media="(min-width: 501px)" srcset="img/project_images/tabs_static.gif">
-                    <img src="img/project_images/tabs_static.gif" alt="tab component">
+                      <img src="img/project_images/tabs_static.gif" alt="tab component">
                     </picture>
                     <label class="slide-nav__next" for="p3-s4"><i class="fa fa-chevron-right fa-lg" aria-hidden="true"></i></label>
                   </figure>
                   <figure class="project-carousel__slide">
                     <label class="slide-nav__previous" for="p3-s3"><i class="fa fa-chevron-left fa-lg" aria-hidden="true"></i></label>
-                    <div class="project-embed tab-component-embed">
+                    <div class="project-embed">
                       <!-- begin tab component embed -->
                       <div class="tab-component">
                         <input type="radio" id="home-decor" name="tab-input" checked>
@@ -464,14 +465,16 @@
                 <input type="radio" name="image-gallery" id="p4-s1" checked>
                 <input type="radio" name="image-gallery" id="p4-s2">
                 <input type="radio" name="image-gallery" id="p4-s3">
+                <input type="radio" name="image-gallery" id="p4-s4">
                 <div class="project-carousel__bullet-nav">
                   <label for="p4-s1"></label>
                   <label for="p4-s2"></label>
                   <label for="p4-s3"></label>
+                  <label for="p4-s4"></label>
                 </div>
                 <div class="project-carousel__display-area">
                   <figure class="project-carousel__slide">
-                    <label class="slide-nav__previous" for="p4-s3"><i class="fa fa-chevron-left fa-lg" aria-hidden="true"></i></label>
+                    <label class="slide-nav__previous" for="p4-s4"><i class="fa fa-chevron-left fa-lg" aria-hidden="true"></i></label>
                     <picture>
                       <source media="(max-width: 500px)" srcset="img/project_images/image_gallery_sml_vert.jpg">
                       <source media="(min-width: 501px)" srcset="img/project_images/image_gallery.gif">
@@ -495,6 +498,35 @@
                       <source media="(min-width: 501px)" srcset="img/project_images/image_gallery_resize.gif">
                       <img src="img/project_images/image_gallery_resize.gif" alt="close up of image gallery">
                     </picture>
+                    <label class="slide-nav__next" for="p4-s4"><i class="fa fa-chevron-right fa-lg" aria-hidden="true"></i></label>
+                  </figure>
+                  <figure class="project-carousel__slide">
+                    <label class="slide-nav__previous" for="p4-s3"><i class="fa fa-chevron-left fa-lg" aria-hidden="true"></i></label>
+                    <div class="project-embed">
+                      <!-- image gallery embed -->
+                      <div class="image_gallery">
+                        <div class="thumbs">
+                          <label for="img-1"><img src="https://unsplash.it/500/?image=111" alt=""></label>
+                          <label for="img-2"><img src="https://unsplash.it/500/?image=1072" alt=""></label>
+                          <label for="img-3"><img src="https://unsplash.it/500/?image=1070" alt=""></label>
+                          <label for="img-4"><img src="https://unsplash.it/500/?image=655" alt=""></label>
+                          <label for="img-5"><img src="https://unsplash.it/500/?image=1071" alt=""></label>
+                        </div>
+                        <div class="full_sized_images">
+                          <input type="radio" name="thumbs" id="img-1" checked>
+                          <img src="https://unsplash.it/500/?image=111" alt="">
+                          <input type="radio" name="thumbs" id="img-2">
+                          <img src="https://unsplash.it/500/?image=1072" alt="">
+                          <input type="radio" name="thumbs" id="img-3">
+                          <img src="https://unsplash.it/500/?image=1070" alt="">
+                          <input type="radio" name="thumbs" id="img-4">
+                          <img src="https://unsplash.it/500/?image=655" alt="">
+                          <input type="radio" name="thumbs" id="img-5">
+                          <img src="https://unsplash.it/500/?image=1071" alt="">
+                        </div>
+                      </div>
+                      <!-- end image gallery embed -->
+                    </div>
                     <label class="slide-nav__next" for="p4-s1"><i class="fa fa-chevron-right fa-lg" aria-hidden="true"></i></label>
                   </figure>
                 </div>
