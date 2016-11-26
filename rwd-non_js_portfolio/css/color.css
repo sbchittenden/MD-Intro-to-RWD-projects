@@ -54,6 +54,19 @@
   font-size: 0.8em;
 }
 
+@media screen and (max-width: 525px) {
+	#color-build-form-wrap {
+		font-size: 0.6em;
+		width: 90%;
+	}
+}
+
+@media screen and (max-width: 400px) {
+	#color-build-form-wrap {
+		width: 100%;
+	}
+}
+
 #color-build-form-wrap .input-wrap {
   padding: 1em;
   margin: 1em;
@@ -165,7 +178,7 @@ orange explosion
 #color-builder {
   position: absolute;
   top: 3em;
-  right: 3em;
+  left: 8.5em;
 }
 
 
