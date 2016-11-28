@@ -144,6 +144,7 @@ orange explosion
   border-bottom: 6.250em solid #bf3333;
   position: relative;
   margin: 1em;
+  z-index: 1;
 }
 
 #pow:before {
@@ -184,6 +185,7 @@ orange explosion
   position: absolute;
   top: 3em;
   left: 8.5em;
+  z-index: 2;
 }
 
 
