@@ -108,7 +108,7 @@ nav:after {
   width: 0;
 }
 
-nav > h1 {
+nav > h1 a {
   color: #EF4D75;
 }
 
