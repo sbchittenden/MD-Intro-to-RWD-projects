@@ -1210,6 +1210,7 @@ input[id^="project"] {
   display: block;
   padding: 0.25em;
   flex: 1;
+  z-index: 50;
 }
 
 .slide-nav__previous:hover,
@@ -1220,6 +1221,9 @@ input[id^="project"] {
 @media screen and (max-width: 525px) {
   .project-carousel__slide {
     overflow-y: hidden;
+  }
+  .project-embed {
+    width: 100%;
   }
   .slide-nav__previous {
     width: 2em;
