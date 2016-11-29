@@ -368,7 +368,7 @@ input[type="checkbox"] {
   display: none;
 }
 
-.nav-off-canvas__container {
+#nav-off-canvas__container {
   font-family: 'Montserrat';
   font-weight: 700;
   width: 18em;
@@ -492,11 +492,11 @@ label[for="off-canvas__search"] {
   background-color: #EF4D75;
 }
 
-#h-to-x-menu:checked ~ .nav-off-canvas__container {
+#nav-off-canvas__container:target {
   left: 0;
 }
 
-#h-to-x-menu:checked ~ #off-canvas-menu__background {
+#nav-off-canvas__container:target ~ #off-canvas-menu__background {
   width: 100%;
   height: 100%;
   background-color: #141519;
@@ -572,7 +572,20 @@ label[for="off-canvas__search"] {
   left: 0;
 }
 
-#h-to-x-menu:checked ~ nav > label[for="h-to-x-menu"] > .h-to-x:before {
+#h-to-x-menu__closer {
+  width: 3em;
+  height: 3em;
+  position: absolute;
+  right: 0.6em;
+  z-index: -100;
+}
+
+#nav-off-canvas__container:target ~ nav #h-to-x-menu__closer {
+  z-index: 100;
+}
+
+
+#nav-off-canvas__container:target ~ nav > #off-canvas-menu__burger > .h-to-x:before {
   top: 0.875em;
   -webkit-transform: rotate(45deg);
   transform: rotate(45deg);
@@ -582,11 +595,11 @@ label[for="off-canvas__search"] {
   transition: top 0.15s linear, transform 0.15s 0.15s ease-out, -webkit-transform 0.15s 0.15s ease-out;
 }
 
-#h-to-x-menu:checked ~ nav > label[for="h-to-x-menu"] > .h-to-x > span {
+#nav-off-canvas__container:target ~ nav > #off-canvas-menu__burger > .h-to-x > span {
   opacity: 0;
 }
 
-#h-to-x-menu:checked ~ nav > label[for="h-to-x-menu"] > .h-to-x:after {
+#nav-off-canvas__container:target ~ nav > #off-canvas-menu__burger > .h-to-x:after {
   bottom: 0.75em;
   -webkit-transform: rotate(-45deg);
   transform: rotate(-45deg);
