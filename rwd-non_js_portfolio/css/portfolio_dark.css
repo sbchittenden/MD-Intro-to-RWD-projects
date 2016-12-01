@@ -641,6 +641,9 @@ label[for="off-canvas__search"] {
   #off-canvas-menu__burger {
     display: block;
   }
+  .main-navigation h1 {
+    flex: 2;
+  }
 }
 
 
