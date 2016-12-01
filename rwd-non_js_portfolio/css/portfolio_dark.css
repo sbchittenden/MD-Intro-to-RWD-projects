@@ -429,7 +429,7 @@ input[type="checkbox"] {
 /* end off-canvas menu item transitions */
 
 .off-canvas__nav-list li a {
-  padding: 1em;
+  padding: 1em 0.75em;
   display: block;
 }
 
