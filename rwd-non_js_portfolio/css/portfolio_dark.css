@@ -585,10 +585,12 @@ label[for="off-canvas__search"] {
   position: absolute;
   right: 0.6em;
   z-index: -100;
+  display: none;
 }
 
 #nav-off-canvas__container:target ~ nav #h-to-x-menu__closer {
   z-index: 100;
+  display: block;
 }
 
 
