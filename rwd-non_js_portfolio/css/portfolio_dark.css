@@ -86,7 +86,7 @@ nav {
   z-index: 50;
 }
 
-nav:after {
+.main-navigation:after {
   border-top: 1em solid #373B44;
   border-left: 100vw solid transparent;
   content: "";
