@@ -581,9 +581,10 @@ label[for="off-canvas__search"] {
 
 #h-to-x-menu__closer {
   width: 3em;
-  height: 3em;
+  height: 5em;
   position: absolute;
   right: 0.6em;
+  top: 0;
   z-index: -100;
   display: none;
 }
