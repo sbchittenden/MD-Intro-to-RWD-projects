@@ -2,7 +2,18 @@
 
 ## Project 1 - Responsive Accordion Menu
 
+**[Files](rwd-accordion)**
+
+**[Demo]()**
+
 ## Project 2 - Responsified previous projects
+
+#### CSS only image gallery
+
+**[Files]()**
+
+**[Demo]()**
+
 
 ## Project 3 - Responsive Non-JS Portfolio
 
