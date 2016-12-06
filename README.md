@@ -6,5 +6,6 @@
 
 ## Project 3 - Responsive Non-JS Portfolio
 
-[Files]()
-[Demo](https://sbchittenden.github.io/MD-Intro-to-RWD-projects/rwd-non_js_portfolio/)
+**[Files](rwd-non_js_portfolio)**
+
+**[Demo](https://sbchittenden.github.io/MD-Intro-to-RWD-projects/rwd-non_js_portfolio/)**
