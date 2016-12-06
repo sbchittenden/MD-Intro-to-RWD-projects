@@ -4,7 +4,7 @@
 
 **[Files](rwd-accordion)**
 
-**[Demo]()**
+**[Demo](https://sbchittenden.github.io/MD-Intro-to-RWD-projects/rwd-accordion/)**
 
 ## Project 2 - Responsified previous projects
 
