@@ -16,9 +16,9 @@
 
 #### CSS only image gallery
 
-**[Files]()**
+**[Files](rwd-image_gallery)**
 
-**[Demo]()**
+**[Demo](https://sbchittenden.github.io/MD-Intro-to-RWD-projects/rwd-image_gallery)**
 
 #### CSS image gallery
 
