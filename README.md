@@ -20,12 +20,6 @@
 
 **[Demo](https://sbchittenden.github.io/MD-Intro-to-RWD-projects/rwd-image_gallery)**
 
-#### CSS image gallery
-
-**[Files](rwd-image_gallery)**
-
-**[Demo](https://sbchittenden.github.io/MD-Intro-to-RWD-projects/rwd-image_gallery)**
-
 #### CSS only tab component
 
 **[Files](rwd-tab-component)**
