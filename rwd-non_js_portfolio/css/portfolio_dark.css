@@ -1846,6 +1846,7 @@ label[for="card-flip"]:hover + .card {
   color: #EF4D75;
   font-weight: 300;
   margin-right: 2em;
+  -webkit-backface-visibility: hidden;
 }
 
 .encyclopedia-link {
