@@ -1063,6 +1063,29 @@ input[id^="project"] {
   background-color: #40444F;
 }
 
+.direction-chev {
+  position: absolute;
+  right: 1.5em;
+  -webkit-transition: -webkit-transform 1s;
+  transition: -webkit-transform 1s;
+  transition: transform 1s;
+  transition: transform 1s, -webkit-transform 1s;
+}
+
+#project-1-acc:checked ~ .project-tabs__display-area label[for="project-1-acc"] > i,
+#project-2-acc:checked ~ .project-tabs__display-area label[for="project-2-acc"] > i,
+#project-3-acc:checked ~ .project-tabs__display-area label[for="project-3-acc"] > i,
+#project-4-acc:checked ~ .project-tabs__display-area label[for="project-4-acc"] > i,
+#project-5-acc:checked ~ .project-tabs__display-area label[for="project-5-acc"] > i,
+#project-6-acc:checked ~ .project-tabs__display-area label[for="project-6-acc"] > i,
+#project-7-acc:checked ~ .project-tabs__display-area label[for="project-7-acc"] > i,
+#project-8-acc:checked ~ .project-tabs__display-area label[for="project-8-acc"] > i,
+#project-9-acc:checked ~ .project-tabs__display-area label[for="project-9-acc"] > i {
+  -webkit-transform: rotate(-180deg);
+  -ms-transform: rotate(-180deg);
+  transform: rotate(-180deg);
+}
+
 #project-1-acc:checked ~ .project-tabs__display-area label[for="project-1-acc"] + .project-accordion__wrapper,
 #project-2-acc:checked ~ .project-tabs__display-area label[for="project-2-acc"] + .project-accordion__wrapper,
 #project-3-acc:checked ~ .project-tabs__display-area label[for="project-3-acc"] + .project-accordion__wrapper,
