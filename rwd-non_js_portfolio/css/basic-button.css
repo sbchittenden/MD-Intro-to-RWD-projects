@@ -1,6 +1,7 @@
 #basic-buttons {
   /*background: white;*/
   font-size: 0.7em;
+  text-align: center;
 }
 
 #basic-buttons h3 {
@@ -63,9 +64,9 @@
 }
 
 @media screen and (max-width: 500px) {
-  #basic-buttons {
+/*  #basic-buttons {
     text-align: center;
-  }
+  }*/
 
   #basic-buttons .button-sm {
     font-size: 0.667em;
