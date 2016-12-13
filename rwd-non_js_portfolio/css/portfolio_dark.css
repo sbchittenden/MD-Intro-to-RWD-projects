@@ -11,7 +11,6 @@ html {
 body {
   background-color: #373B44;
   color: rgb(235, 235, 235);
-  /*position: relative;*/
 }
 
 h1,
@@ -955,6 +954,7 @@ input[id^="project"] {
   -ms-flex: 4;
   flex: 4;
   position: relative;
+  background-color: #373B44;
 }
 
 .project-tabs__content {
@@ -966,7 +966,7 @@ input[id^="project"] {
   z-index: -1;
   pointer-events: none;
   opacity: 0;
-  transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.5s ease-in-out;
 }
 
 .project-tabs__content h1 {
@@ -1048,7 +1048,7 @@ input[id^="project"] {
 
 @media screen and (max-width: 725px) {
   .project-accordion__wrapper {
-    max-height: 0;
+    height: 0px;
     overflow: hidden;
     transition: all 0.75s;
   }
@@ -1062,27 +1062,49 @@ input[id^="project"] {
   background-color: #40444F;
 }
 
-#project-1:checked ~ .project-tabs__display-area label[for="project-1"] + .project-accordion__wrapper,
-#project-2:checked ~ .project-tabs__display-area label[for="project-2"] + .project-accordion__wrapper,
-#project-3:checked ~ .project-tabs__display-area label[for="project-3"] + .project-accordion__wrapper,
-#project-4:checked ~ .project-tabs__display-area label[for="project-4"] + .project-accordion__wrapper,
-#project-5:checked ~ .project-tabs__display-area label[for="project-5"] + .project-accordion__wrapper,
-#project-6:checked ~ .project-tabs__display-area label[for="project-6"] + .project-accordion__wrapper,
-#project-7:checked ~ .project-tabs__display-area label[for="project-7"] + .project-accordion__wrapper,
-#project-8:checked ~ .project-tabs__display-area label[for="project-8"] + .project-accordion__wrapper,
-#project-9:checked ~ .project-tabs__display-area label[for="project-9"] + .project-accordion__wrapper {
-  max-height: 725px;
+#project-1-acc:checked ~ .project-tabs__display-area label[for="project-1-acc"] + .project-accordion__wrapper,
+#project-2-acc:checked ~ .project-tabs__display-area label[for="project-2-acc"] + .project-accordion__wrapper,
+#project-3-acc:checked ~ .project-tabs__display-area label[for="project-3-acc"] + .project-accordion__wrapper,
+#project-4-acc:checked ~ .project-tabs__display-area label[for="project-4-acc"] + .project-accordion__wrapper,
+#project-5-acc:checked ~ .project-tabs__display-area label[for="project-5-acc"] + .project-accordion__wrapper,
+#project-6-acc:checked ~ .project-tabs__display-area label[for="project-6-acc"] + .project-accordion__wrapper,
+#project-7-acc:checked ~ .project-tabs__display-area label[for="project-7-acc"] + .project-accordion__wrapper,
+#project-8-acc:checked ~ .project-tabs__display-area label[for="project-8-acc"] + .project-accordion__wrapper,
+#project-9-acc:checked ~ .project-tabs__display-area label[for="project-9-acc"] + .project-accordion__wrapper {
+  height: 725px;
 }
 
-#project-1:checked ~ .project-tabs__display-area label[for="project-1"] + .project-accordion__wrapper .project-tabs__content,
-#project-2:checked ~ .project-tabs__display-area label[for="project-2"] + .project-accordion__wrapper .project-tabs__content,
-#project-3:checked ~ .project-tabs__display-area label[for="project-3"] + .project-accordion__wrapper .project-tabs__content,
-#project-4:checked ~ .project-tabs__display-area label[for="project-4"] + .project-accordion__wrapper .project-tabs__content,
-#project-5:checked ~ .project-tabs__display-area label[for="project-5"] + .project-accordion__wrapper .project-tabs__content,
-#project-6:checked ~ .project-tabs__display-area label[for="project-6"] + .project-accordion__wrapper .project-tabs__content,
-#project-7:checked ~ .project-tabs__display-area label[for="project-7"] + .project-accordion__wrapper .project-tabs__content,
-#project-8:checked ~ .project-tabs__display-area label[for="project-8"] + .project-accordion__wrapper .project-tabs__content,
-#project-9:checked ~ .project-tabs__display-area label[for="project-9"] + .project-accordion__wrapper .project-tabs__content {
+
+#project-1-acc:checked ~ .project-tabs__display-area label[for="project-1-acc"] + .project-accordion__wrapper .project-tabs__content,
+#project-2-acc:checked ~ .project-tabs__display-area label[for="project-2-acc"] + .project-accordion__wrapper .project-tabs__content,
+#project-3-acc:checked ~ .project-tabs__display-area label[for="project-3-acc"] + .project-accordion__wrapper .project-tabs__content,
+#project-4-acc:checked ~ .project-tabs__display-area label[for="project-4-acc"] + .project-accordion__wrapper .project-tabs__content,
+#project-5-acc:checked ~ .project-tabs__display-area label[for="project-5-acc"] + .project-accordion__wrapper .project-tabs__content,
+#project-6-acc:checked ~ .project-tabs__display-area label[for="project-6-acc"] + .project-accordion__wrapper .project-tabs__content,
+#project-7-acc:checked ~ .project-tabs__display-area label[for="project-7-acc"] + .project-accordion__wrapper .project-tabs__content,
+#project-8-acc:checked ~ .project-tabs__display-area label[for="project-8-acc"] + .project-accordion__wrapper .project-tabs__content,
+#project-9-acc:checked ~ .project-tabs__display-area label[for="project-9-acc"] + .project-accordion__wrapper .project-tabs__content {
+  z-index: 5;
+  position: relative;
+  opacity: 1;
+  pointer-events: auto;
+  transition: all 0.75s ease-in-out;
+}
+
+
+
+
+
+
+#project-1:checked ~ .project-tabs__display-area label[for="project-1-acc"] + .project-accordion__wrapper .project-tabs__content,
+#project-2:checked ~ .project-tabs__display-area label[for="project-2-acc"] + .project-accordion__wrapper .project-tabs__content,
+#project-3:checked ~ .project-tabs__display-area label[for="project-3-acc"] + .project-accordion__wrapper .project-tabs__content,
+#project-4:checked ~ .project-tabs__display-area label[for="project-4-acc"] + .project-accordion__wrapper .project-tabs__content,
+#project-5:checked ~ .project-tabs__display-area label[for="project-5-acc"] + .project-accordion__wrapper .project-tabs__content,
+#project-6:checked ~ .project-tabs__display-area label[for="project-6-acc"] + .project-accordion__wrapper .project-tabs__content,
+#project-7:checked ~ .project-tabs__display-area label[for="project-7-acc"] + .project-accordion__wrapper .project-tabs__content,
+#project-8:checked ~ .project-tabs__display-area label[for="project-8-acc"] + .project-accordion__wrapper .project-tabs__content,
+#project-9:checked ~ .project-tabs__display-area label[for="project-9-acc"] + .project-accordion__wrapper .project-tabs__content {
   z-index: 5;
   position: relative;
   opacity: 1;
@@ -1763,7 +1785,7 @@ label[for="card-flip"]:hover + .card {
   height: 100%;
   padding: 1em 1.3em;
   background-color: #373B44;
-  background: #373B44 url(../img/business_card/skulls.png) repeat;
+  background: #373B44 url(../img/business_card/skulls_50.png) repeat;
 }
 
 .card-front > .fa-reply,
@@ -1789,6 +1811,8 @@ label[for="card-flip"]:hover + .card {
   bottom: 1.1em;
   font-family: "Lato";
   -webkit-backface-visibility: hidden;
+  /* hiding encyclopedia link for now */
+  display: none;
 }
 
 .encyclopedia-link a {
@@ -1814,7 +1838,8 @@ label[for="card-flip"]:hover + .card {
   margin: 0;
   position: absolute;
   bottom: 1.1em;
-  right: 1em;
+  left: 1em; /* align left while encylopedia link is hidden */
+  /*right: 1em;*/
   width: auto;
   -webkit-backface-visibility: hidden;
 }
