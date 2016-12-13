@@ -484,6 +484,7 @@ label[for="off-canvas__search"] {
   cursor: pointer;
   display: block;
   padding: 1em;
+  margin-left: -4px;
 }
 
 .off-canvas__nav-list a {
