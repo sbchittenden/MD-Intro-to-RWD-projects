@@ -1086,6 +1086,25 @@ input[id^="project"] {
   transform: rotate(-180deg);
 }
 
+
+
+#project-1-acc:checked ~ .project-tabs__display-area label[for="project-1-acc"],
+#project-2-acc:checked ~ .project-tabs__display-area label[for="project-2-acc"],
+#project-3-acc:checked ~ .project-tabs__display-area label[for="project-3-acc"],
+#project-4-acc:checked ~ .project-tabs__display-area label[for="project-4-acc"],
+#project-5-acc:checked ~ .project-tabs__display-area label[for="project-5-acc"],
+#project-6-acc:checked ~ .project-tabs__display-area label[for="project-6-acc"],
+#project-7-acc:checked ~ .project-tabs__display-area label[for="project-7-acc"],
+#project-8-acc:checked ~ .project-tabs__display-area label[for="project-8-acc"],
+#project-9-acc:checked ~ .project-tabs__display-area label[for="project-9-acc"] {
+  border-bottom: solid 2px #EF4D75;
+  background-color: #8a91a1;
+}
+
+
+
+
+
 #project-1-acc:checked ~ .project-tabs__display-area label[for="project-1-acc"] + .project-accordion__wrapper,
 #project-2-acc:checked ~ .project-tabs__display-area label[for="project-2-acc"] + .project-accordion__wrapper,
 #project-3-acc:checked ~ .project-tabs__display-area label[for="project-3-acc"] + .project-accordion__wrapper,
