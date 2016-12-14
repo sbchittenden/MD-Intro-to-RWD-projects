@@ -765,6 +765,23 @@ label[for="off-canvas__search"] {
   color: #EF4D75;
 }
 
+#top:target ~ #landing > .greeting {
+  animation: 0.75s hiInUp cubic-bezier(0.185, 0.470, 0.030, 0.940);
+}
+
+@keyframes hiInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(2em);
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
 .greeting > a {
   width: 2.5rem;
   height: 2.5rem;
