@@ -69,6 +69,13 @@
   z-index: 5;
 }
 
+@media screen and (max-width: 768px) {
+  .tab-component {
+    font-size: 0.75em;
+  }
+}
+
+
 @media screen and (max-width: 548px) {
   .tab-component {
     font-size: 0.68em;

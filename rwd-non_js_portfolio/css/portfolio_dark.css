@@ -1173,11 +1173,6 @@ input[id^="project"] {
   transition: all 0.75s ease-in-out;
 }
 
-
-
-
-
-
 #project-1:checked ~ .project-tabs__display-area label[for="project-1-acc"] + .project-accordion__wrapper .project-tabs__content,
 #project-2:checked ~ .project-tabs__display-area label[for="project-2-acc"] + .project-accordion__wrapper .project-tabs__content,
 #project-3:checked ~ .project-tabs__display-area label[for="project-3-acc"] + .project-accordion__wrapper .project-tabs__content,
@@ -1353,7 +1348,7 @@ input[id^="project"] {
   }*/
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 600px) {
   .slide-nav__previous,
   .slide-nav__next {
     display: none;
