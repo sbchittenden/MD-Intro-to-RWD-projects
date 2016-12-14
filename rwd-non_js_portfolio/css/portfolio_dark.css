@@ -775,7 +775,7 @@ label[for="off-canvas__search"] {
   z-index: 10;
 }
 
-.greeting:after {
+.greeting-v:after {
   content: "V";
   width: 2.5rem;
   height: 2.5rem;
@@ -801,6 +801,16 @@ label[for="off-canvas__search"] {
   position: relative;
   padding: 0 0.5em;
 }
+
+
+#about:target > .section__content,
+#projects:target > .section__content,
+#skills:target > .section__content,
+#articles:target > .section__content,
+#contact:target > .section__content {
+  animation: 0.75s fadeInUp cubic-bezier(0.185, 0.470, 0.030, 0.940);
+}
+
 
 .section__content a {}
 
@@ -893,6 +903,18 @@ label[for="off-canvas__search"] {
 
 .article-list li {
   font-size: 1.25em;
+}
+
+/* -----------------------------------------
+       SECTION CONTENT ANIMATION KEYFRAMES
+-------------------------------------------*/
+@keyframes fadeInUp {
+  0% {
+    transform: translateY(8em);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }
 
 
